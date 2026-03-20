@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Shop</title>
+
+<title>LMT - Lakshmimayee Traders</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,26 +11,32 @@
 body{
 font-family: Arial;
 margin:0;
-background:#f2f2f2;
+background:#f4f4f4;
 text-align:center;
 }
 
 header{
-background:#0a66c2;
+background:#b22222;
 color:white;
 padding:20px;
-font-size:25px;
+font-size:28px;
 }
 
 section{
 padding:20px;
 }
 
-img{
-width:90%;
-max-width:400px;
-border-radius:10px;
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.gallery img{
+width:280px;
 margin:10px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
 button{
@@ -38,8 +45,8 @@ margin:10px;
 border:none;
 border-radius:8px;
 font-size:16px;
-background:#0a66c2;
 color:white;
+cursor:pointer;
 }
 
 .whatsapp{
@@ -50,30 +57,54 @@ background:#25D366;
 background:#ff5722;
 }
 
+.map{
+width:100%;
+height:300px;
+border:0;
+}
+
+footer{
+background:#222;
+color:white;
+padding:15px;
+margin-top:20px;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
-Our Shop
+LAKSHMIMAYEE TRADERS (LMT)
 </header>
 
 <section>
+
 <h2>Our Shop Gallery</h2>
 
-<img src="photo1.jpg">
-<img src="photo2.jpg">
-<img src="photo3.jpg">
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1581091215367-59ab6b1c1d1f">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+<img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0">
+
+</div>
 
 </section>
 
 <section>
+
 <h2>Our Products</h2>
 
-<img src="product1.jpg">
-<img src="product2.jpg">
-<img src="product3.jpg">
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
+<img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+
+</div>
 
 </section>
 
@@ -87,7 +118,7 @@ Our Shop
 
 <br>
 
-<a href="tel:+91YOURNUMBER">
+<a href="tel:8388929880">
 <button class="call">Call Now</button>
 </a>
 
@@ -97,14 +128,15 @@ Our Shop
 
 <h2>Our Location</h2>
 
-<iframe 
-src="https://www.google.com/maps?q=https://maps.app.goo.gl/QKgmjiDtdCCkyzmn7&output=embed"
-width="100%" 
-height="300"
-style="border:0;">
+<iframe class="map"
+src="https://maps.google.com/maps?q=https://maps.app.goo.gl/QKgmjiDtdCCkyzmn7&output=embed">
 </iframe>
 
 </section>
+
+<footer>
+© 2026 LMT - Lakshmimayee Traders
+</footer>
 
 </body>
 </html>
